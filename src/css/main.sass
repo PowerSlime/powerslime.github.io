@@ -67,6 +67,8 @@ header.introduction
 	h2
 		font-size: em(36px, $font-size-base)
 		margin: 0
+		padding: 0
+		background: none
 
 	hr
 		background: $color-text
@@ -107,6 +109,57 @@ header.introduction
 		.occupation
 			margin: 0
 			margin-bottom: 45px
+
+
+.text-align-to-right
+	text-align: right
+
+.container-with-no-padding
+	padding-left: 0
+	padding-right: 0
+
+.padding-50-on-top
+	padding-top: 50px
+
+
+h2
+	background: $color-main
+	color: $color-body-background
+	display: inline-block
+	padding: 3px 10px
+	margin-bottom: 10px
+
+
+.languages-container
+	.language
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 10px
+
+		.lang
+			color: $color-main
+			font-weight: $font-weight-bold
+		.lang-progress
+			color: $color-text-darken
+			font-weight: $font-weight-bold
+
+
+.education-container
+	ul.school
+		text-transform: uppercase
+		padding: 0
+		list-style: none
+
+		.date
+			font-weight: $font-weight-bold
+			color: $color-main
+
+		.name
+			color: $color-main
+
+		.place
+			font-weight: $font-weight-bold
+			color: $color-text-darken
 
 
 
