@@ -1,0 +1,114 @@
+@import "_functions"
+@import "_var"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	color: #333
+	font-family: $font-base
+	font-size: $font-size-base
+	line-height: em(24px, $font-size-base)
+	min-width: 320px
+	overflow-x: hidden
+	position: relative
+
+.hidden
+	display: none
+
+// Custom styles here
+h1, h2, h3
+	text-transform: uppercase
+	font-weight: $font-weight-bold
+
+h1, h2
+	font-size: em(30px, $font-size-base)
+
+
+body
+	background: $color-body-background
+	color: $color-main
+	font-weight: $font-weight
+
+strong
+	font-weight: $font-weight-bold
+
+
+header.introduction
+	color: $color-text
+	background: url("/img/background.jpg") center 100%/cover no-repeat
+
+	.container > .row
+		min-height: 100vh
+
+	strong:after
+		content: " "
+
+	h2
+		font-size: em(36px, $font-size-base)
+		margin: 0
+
+	hr
+		background: $color-text
+		height: 2px
+		margin: 0
+
+	a
+		color: $color-text
+
+	ul
+		padding: 0
+		margin: 20px 0 0 0
+		list-style: none
+
+	.about-me
+		text-align: right
+		margin-bottom: 20px
+
+		p
+			margin: 0
+			margin-top: 20px
+
+	.portrait
+		border: 2px solid $color-text
+		text-align: center
+		text-transform: uppercase
+
+		img
+			height: 355px
+			width: 355px
+			margin: 45px
+			object-fit: cover
+
+		.name
+			margin: 0
+			margin-top: -16px
+
+		.occupation
+			margin: 0
+			margin-bottom: 45px
+
+
+
+//ALWAYS END
+@import "_media.sass"
