@@ -1,3 +1,9 @@
+mixin add_language(language, rating)
+	.col-md-3.col-sm-3.col-3
+		.language
+			.lang= language
+			.lang-progress= rating
+
 mixin add_skill(language, rating)
 	//- rating is an array, ex. [3, 5]
 	//- for 3/5 rating
@@ -24,3 +30,11 @@ mixin add_interest(source, description)
 				else
 					img.image(src=source, alt=description, style="opacity: 0")
 			p.title(data-custom-text=attributes.custom_text)= description
+
+
+mixin add_project(title, url, image)
+	.project-container
+		.image-container
+			a(href=url, target='_blank')
+				img.img-fluid(src=image)
+		p.title= title

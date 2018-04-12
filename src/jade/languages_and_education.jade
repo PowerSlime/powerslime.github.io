@@ -4,29 +4,19 @@
 			h2 Languages
 			section.container.languages-container.container-with-no-padding
 				.row
-					.col-md-3
-						.language
-							.lang English
-							.lang-progress 3/5
+					+add_language('English', '3/5')
+					+add_language('Romanian', '3/5')
+					+add_language('Russian', '5/5')
 
-					.col-md-3
-						.language
-							.lang Romanian
-							.lang-progress 3/5
-
-					.col-md-3
-						.language
-							.lang Russian
-							.lang-progress 5/5
 				.row
 					.col
 						article
 							p.
 								Russian is my native language. English is “language of work”, also I like it so
-								much. Romanian a bit harder for me than English, only because I don’t use
+								much. Romanian for me is a bit harder than English, only because I don’t use
 								it so much as English...
 							p.
-								Wanna know English as good as Russian. It will give me a possibility to speak
+								I want to know English as good as Russian. It will give me a possibility to speak
 								easier with other people.
 
 		.col-md-6.education-block.text-align-to-right
