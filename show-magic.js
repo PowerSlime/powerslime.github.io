@@ -1,3 +1,5 @@
+$('.magic').find('.image-container').css({cursor: 'pointer'});
+
 $('.magic').on('click', '.image-container', function() {
 	var image = $(this).closest('.item-container');
 	var paragraph = image.find('p')
