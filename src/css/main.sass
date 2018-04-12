@@ -161,6 +161,73 @@ h2
 			font-weight: $font-weight-bold
 			color: $color-text-darken
 
+.skills-block
+	.skills-table
+		margin-top: 16px
+		width: 66%
+
+		td:first-child, td:last-child
+			width: 50%
+			line-height: 20px
+
+
+		.skill
+			text-transform: uppercase
+
+		.rating-list
+			margin: 0
+			padding: 0
+
+			.rating
+				display: inline-block
+				width: 12px
+				height: 12px
+				background: $color-main-lighten
+				padding: 0
+				margin: 0
+				margin-right: 6px;
+
+			.rating.active
+				background: $color-main
+
+
+.interests-block
+	.custom-flex
+		margin-top: 20px
+		display: flex
+		flex-direction: row-reverse
+
+	.interests-list
+		margin: 0
+		padding: 0
+
+		.item:first-child
+			margin-left: 0
+		.item
+			float: left
+			margin-left: 9px
+			padding: 0
+			list-style: none
+
+			.item-container
+				.image-container
+					display: flex
+					justify-content: center
+
+					width: 128px
+					height: 128px
+					background: $color-main
+
+					.image
+						align-self: center
+						width: 100px
+						height: 100px
+
+				.title
+					font-weight: $font-weight-bold
+					text-transform: uppercase
+					text-align: center
+					display: block
 
 
 //ALWAYS END

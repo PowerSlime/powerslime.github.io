@@ -1,0 +1,26 @@
+mixin add_skill(language, rating)
+	//- rating is an array, ex. [3, 5]
+	//- for 3/5 rating
+
+	tr
+		td.skill= language
+		td.rating_row
+			ul.rating-list
+				- for (var active = 1; active <= rating[0]; active++)
+					li.rating.active
+
+				- rest = rating[1] - rating[0]
+				- for (var blocks = 1; blocks <= rest; blocks++)
+					li.rating
+
+
+mixin add_interest(source, description)
+	li.item
+		.item-container(class=attributes.custom_class)
+			.image-container
+
+				if !attributes.custom_class
+					img.image(src=source, alt=description)
+				else
+					img.image(src=source, alt=description, style="opacity: 0")
+			p.title(data-custom-text=attributes.custom_text)= description

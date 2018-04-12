@@ -1,0 +1,37 @@
+.container.padding-50-on-top
+	.row
+		//- Skills
+		.col-md-6.skills-block
+			h2 Skills
+
+			section.container.skills-container.container-with-no-padding
+			.row
+				.col-md-12
+					table.skills-table
+						+add_skill('Python', [3, 5])
+						+add_skill('HTML/CSS', [4, 5])
+						+add_skill('Bootstrap', [3, 5])
+						+add_skill('jQuery', [3, 5])
+						+add_skill('JavaScript', [2, 5])
+
+					table.skills-table
+						+add_skill('Git', [3, 5])
+						+add_skill('Jade', [4, 5])
+						+add_skill('SASS', [3, 5])
+
+					table.skills-table
+						+add_skill('StackOverflow', [5, 5])
+
+		//- Interests
+		.col-md-6.interests-block.text-align-to-right
+			h2 Interests
+
+			section.container.interests-container.container-with-no-padding
+			.row
+				.col-md-12
+					.custom-flex
+						ul.interests-list
+							+add_interest('https://placehold.it/100x100', 'Click ^_^')(custom_class='magic', custom_text='Anime')
+							+add_interest('https://placehold.it/100x100', 'Photography')
+							+add_interest('https://placehold.it/100x100', 'Design')
+							+add_interest('https://placehold.it/100x100', 'Programming')
