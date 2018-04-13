@@ -201,14 +201,21 @@ h2
 		flex-direction: row-reverse
 
 	.interests-list
+		display: flex
+		width: 100%
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+
 		margin: 0
 		padding: 0
 
 		.item:first-child
-			margin-left: 0
+			align-self: flex-start
+
 		.item
 			float: left
-			margin-left: 9px
+			// margin-left: 9px
 			padding: 0
 			list-style: none
 

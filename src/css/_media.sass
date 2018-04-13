@@ -11,6 +11,10 @@
 				width: 278px
 				height: 278px
 
+	.interests-block
+		.interests-list
+			width: 66%
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	header.introduction
@@ -23,6 +27,19 @@
 		.skills-table
 			width: 100%
 
+	.interests-block
+		.interests-list
+			width: 100%
+
+			.item
+				.item-container
+					.image-container
+						width: 155px
+						height: 155px
+
+						.image
+							width: 127px
+							height: 127px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -34,11 +51,6 @@
 				height: 418px
 		.description
 			margin-bottom: 50px
-
-	.text-align-to-right
-		text-align: left
-		margin-top: 50px
-		margin-bottom: 0
 
 	/*Disable Animation on Mobile Devices*/
 	.animated
@@ -64,13 +76,68 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.text-align-to-right
+		text-align: left
+		margin-top: 50px
+
 	header.introduction
 		.portrait
 			margin: 50px 0
 			img
 				width: 238px
 				height: 238px
+
+	.interests-block
+		.interests-list
+			.item
+				.item-container
+					.image-container
+						width: 180px
+						height: 180px
+
+						.image
+							width: 152px
+							height: 152px
 	/**/
+
+@media only screen and (max-width : 420px)
+	.interests-block
+		.interests-list
+			.item
+				.item-container
+					.image-container
+						width: 155px
+						height: 155px
+
+						.image
+							width: 127px
+							height: 127px
+
+@media only screen and (max-width : 370px)
+	.interests-block
+		.interests-list
+			.item
+				.item-container
+					.image-container
+						width: 145px
+						height: 145px
+
+						.image
+							width: 117px
+							height: 117px
+
+@media only screen and (max-width : 350px)
+	.interests-block
+		.interests-list
+			.item
+				.item-container
+					.image-container
+						width: 135px
+						height: 135px
+
+						.image
+							width: 107px
+							height: 107px
 
 
 /* Custom, iPhone Retina */
