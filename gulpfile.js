@@ -13,7 +13,8 @@ const gulp = require('gulp'),
 
 config = {
 	dist_dir: 'dist',
-	src_dir: 'src'
+	src_dir: 'src',
+	run_on_start: ['sass', 'jade', 'move_html_to_dist', 'move_js_to_dist', 'imagemin']
 }
 
 
@@ -22,8 +23,10 @@ config.images_src = `${config.src_dir}/img`;
 
 
 patterns = {
+	dist: `${config.dist_dir}/**/*`,
 	sass: `${config.src_dir}/**/*.{sass,scss}`,
 	jade: `${config.src_dir}/*.jade`,
+	jade_files: `${config.src_dir}/**/*.jade`,
 	html: `${config.src_dir}/*.html`,
 	js: `${config.src_dir}/**/*.js`,
 	img: `${config.images_src}/**/*`
@@ -51,7 +54,6 @@ gulp.task('sass', () => {
 		.pipe(autoprefixer({browsers: ['last 5 versions']}))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest(`${config.dist_dir}`))
-		.pipe(browserSync.stream());
 })
 
 
@@ -61,21 +63,18 @@ gulp.task('jade', () => {
 			pretty: true
 		}).on("error", notify.onError()))
 		.pipe(gulp.dest(`${config.dist_dir}`))
-		.pipe(browserSync.stream());
 })
 
 
 gulp.task('move_html_to_dist', () => {
 	return gulp.src(patterns.html)
 		.pipe(gulp.dest(`${config.dist_dir}`))
-		.pipe(browserSync.stream());
 })
 
 
 gulp.task('move_js_to_dist', () => {
 	return gulp.src(patterns.js)
 		.pipe(gulp.dest(`${config.dist_dir}`))
-		.pipe(browserSync.stream());
 })
 
 
@@ -94,16 +93,24 @@ gulp.task('imagemin', () => {
 	    	imagemin.optipng({optimizationLevel: 3})
 	    ]))
 		.pipe(gulp.dest(`${config.images_dist}`))
+})
+
+
+gulp.task('sync', () => {
+	return gulp.src(patterns.dist)
 		.pipe(browserSync.stream());
 })
 
 
-gulp.task('watch', ['browser-sync'], () => {
+gulp.task('watch', config.run_on_start.concat(['browser-sync']), () => {
+	gulp.watch(patterns.dist, ['sync']);
 	gulp.watch(patterns.sass, ['sass']);
 	gulp.watch(patterns.jade, ['jade']);
+	gulp.watch(patterns.jade_files, ['jade'], null)
 	gulp.watch(patterns.html, ['move_html_to_dist']);
 	gulp.watch(patterns.js, ['move_js_to_dist']);
 	gulp.watch(patterns.img, ['imagemin']);
 })
 
 gulp.task('default', ['watch']);
+gulp.task('build', config.run_on_start)
