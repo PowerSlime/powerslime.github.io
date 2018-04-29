@@ -15,11 +15,16 @@
     <header class="introduction">
       <div class="container">
         <div class="row align-items-center">
+          <ul class="translations">
+            <li>EN</li>
+            <li>RU</li>
+            <li>RO</li>
+          </ul>
           <div class="col-md-5">
             <section class="portrait"><a href="./img/my_photo.jpg" data-fancybox="gallery"><img src="./img/my_photo.jpg"></a>
               <div class="description">
                 <h1 class="name">Denis Covaliuc</h1>
-                <p class="occupation">Student</p>
+                <p data-translate-id="about-me-occupation" class="occupation"></p>
               </div>
             </section>
           </div>
@@ -27,15 +32,15 @@
           <div class="col-md-6">
             <section class="description">
               <article class="about-me">
-                <h2>About me</h2>
-                <p>I’m 18, live in Moldova, I want to become a fullstack web-developer. My favorite language is Python. Also now I wanna be a front-end developer...</p>
+                <h2 data-translate-id="about-me-header"></h2>
+                <p data-translate-id="about-me-description"></p>
               </article>
               <hr>
               <article class="info">
                 <ul class="overall-info">
-                  <li><strong>Date of birth:</strong>14/10/1999
+                  <li><strong data-translate-id="about-me-date"></strong>14/10/1999
                   </li>
-                  <li><strong>Country:</strong>Moldova
+                  <li><strong data-translate-id="about-me-country"></strong>Moldova
                   </li>
                 </ul>
                 <ul class="other-info">
@@ -53,24 +58,24 @@
     <div class="container padding-50-on-top">
       <div class="row">
         <div class="col-md-6 languages-block">
-          <h2>Languages</h2>
+          <h2 data-translate-id="language-header"></h2>
           <section class="container languages-container container-with-no-padding">
             <div class="row">
               <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                 <div class="language">
-                  <div class="lang">English</div>
+                  <div data-translate-id="language-en" class="lang"></div>
                   <div class="lang-progress">3/5</div>
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                 <div class="language">
-                  <div class="lang">Romanian</div>
+                  <div data-translate-id="language-ro" class="lang"></div>
                   <div class="lang-progress">3/5</div>
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                 <div class="language">
-                  <div class="lang">Russian</div>
+                  <div data-translate-id="language-ru" class="lang"></div>
                   <div class="lang-progress">5/5</div>
                 </div>
               </div>
@@ -78,23 +83,15 @@
             <div class="row">
               <div class="col">
                 <article>
-                  <p>
-                    Russian is my native language. English is “language of work”, also I like it so
-                    much. Romanian for me is a bit harder than English, only because I don’t use
-                    it so much...
-                  </p>
-                  <p>
-                    I want to know English as good as Russian. It will give me a possibility to speak
-                    easier with other people.
-                    
-                  </p>
+                  <p data-translate-id="language-first-part"></p>
+                  <p data-translate-id="language-second-part"></p>
                 </article>
               </div>
             </div>
           </section>
         </div>
         <div class="col-md-6 education-block text-align-to-right">
-          <h2>Education</h2>
+          <h2 data-translate-id="education-header"></h2>
           <section class="container education-container container-with-no-padding">
             <div class="row">
               <div class="col">
@@ -119,7 +116,7 @@
     <div class="container padding-50-on-top">
       <div class="row">
         <div class="col-md-6 skills-block">
-          <h2>Skills</h2>
+          <h2 data-translate-id="skills-header"></h2>
           <section class="container skills-container container-with-no-padding"></section>
           <div class="row">
             <div class="col-md-12">
@@ -241,7 +238,7 @@
           </div>
         </div>
         <div class="col-md-6 interests-block text-align-to-right">
-          <h2>Interests</h2>
+          <h2 data-translate-id="interests-header"></h2>
           <section class="container interests-container container-with-no-padding"></section>
           <div class="row">
             <div class="col-md-12">
@@ -251,28 +248,28 @@
                     <div class="item-container magic">
                       <div class="image-container"><img src="./img/magic.jpg" alt="Click ^_^" style="opacity: 0" class="image"/>
                       </div>
-                      <p data-custom-text="Anime" class="title">Click ^_^</p>
+                      <p data-custom-text="Anime" data-translate-id="interests-anime" class="title"></p>
                     </div>
                   </li>
                   <li class="item">
                     <div class="item-container">
                       <div class="image-container"><img src="./img/photography.jpg" alt="Photography" class="image"/>
                       </div>
-                      <p class="title">Photography</p>
+                      <p data-translate-id="interests-photography" class="title"></p>
                     </div>
                   </li>
                   <li class="item">
                     <div class="item-container">
                       <div class="image-container"><img src="./img/design.jpg" alt="Design" class="image"/>
                       </div>
-                      <p class="title">Design</p>
+                      <p data-translate-id="interests-design" class="title"></p>
                     </div>
                   </li>
                   <li class="item">
                     <div class="item-container">
                       <div class="image-container"><img src="./img/programming.jpg" alt="Programming" class="image"/>
                       </div>
-                      <p class="title">Programming</p>
+                      <p data-translate-id="interests-programming" class="title"></p>
                     </div>
                   </li>
                 </ul>
@@ -284,25 +281,25 @@
     </div>
     <div class="container padding-50-on-top">
       <div class="row justify-content-center">
-        <h2>Projects</h2>
+        <h2 data-translate-id="projects-header"></h2>
       </div>
       <div class="row projects-row">
         <div class="col-md-4">
           <div class="project-container">
             <div class="image-container"><a href="//powerslime.github.io/template_mihaela_dreglea_art/" target="_blank"><img src="./img/artist_template.jpg" class="img-fluid"/></a></div>
-            <p class="title">Artist template</p>
+            <p data-translate-id="project-artist" class="title"></p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="project-container">
             <div class="image-container"><a href="//github.com/PowerSlime/starter_template" target="_blank"><img src="./img/starter_template.jpg" class="img-fluid"/></a></div>
-            <p class="title">Starter template</p>
+            <p data-translate-id="project-starter-template" class="title"></p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="project-container">
             <div class="image-container"><a href="//github.com/PowerSlime/powerslime.github.io" target="_blank"><img src="./img/powerslime.github.io.jpg" class="img-fluid"/></a></div>
-            <p class="title">This page</p>
+            <p data-translate-id="project-this" class="title"></p>
           </div>
         </div>
       </div>
@@ -311,10 +308,7 @@
       <div class="container">
         <div class="row footer">
           <div class="col-md-12">
-            <p class="text">
-              Designed by <a href='https://github.com/PowerSlime', target='_blank'>me</a>.
-              You can check all the sources <a href='https://github.com/PowerSlime/powerslime.github.io', target='_blank'>here</a>.
-            </p>
+            <p data-translate-id="footer-info" class="text"></p>
           </div>
         </div>
       </div>
@@ -322,6 +316,7 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
     <script src="./show-magic.js"></script>
+    <script src="./translate.js"></script>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
