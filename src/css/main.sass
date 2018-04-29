@@ -54,11 +54,25 @@ strong
 	font-weight: $font-weight-bold
 
 
+.translations
+	z-index: 2
+	position: absolute
+	top: 0
+	right: 0
+	margin: 10px 15px
+
+	li
+		display: inline-block
+		cursor: pointer
+		padding: 3px 5px
+
+
 header.introduction
 	color: $color-text
 	background: url("/img/background.jpg") center 100%/cover no-repeat
 
 	.container > .row
+		position: relative // For .translations
 		min-height: 100vh
 
 	strong:after
@@ -78,7 +92,7 @@ header.introduction
 	a
 		color: $color-text
 
-	ul
+	.info > ul
 		padding: 0
 		margin: 20px 0 0 0
 		list-style: none

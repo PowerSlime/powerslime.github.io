@@ -1,30 +1,34 @@
 header.introduction
 	.container
 		.row.align-items-center
+			ul.translations
+				li EN
+				li RU
+				li RO
 			.col-md-5
 				section.portrait
 					a(href="./img/my_photo.jpg", data-fancybox='gallery')
 						img(src="./img/my_photo.jpg")
 					.description
 						h1.name Denis Covaliuc
-						p.occupation Student
+						p(data-translate-id="about-me-occupation").occupation
 
 			.col-md-1
 			.col-md-6
 				section.description
 					article.about-me
-						h2 About me
-						p I’m 18, live in Moldova, I want to become a fullstack web-developer. My favorite language is Python. Also now I wanna be a front-end developer...
+						h2(data-translate-id="about-me-header")
+						p(data-translate-id="about-me-description")
 
 					hr
 
 					article.info
 						ul.overall-info
 							li
-								strong Date of birth:
+								strong(data-translate-id="about-me-date")
 								="14/10/1999"
 							li
-								strong Country:
+								strong(data-translate-id="about-me-country")
 								="Moldova"
 
 						ul.other-info

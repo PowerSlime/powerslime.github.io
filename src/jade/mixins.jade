@@ -1,7 +1,7 @@
-mixin add_language(language, rating)
+mixin add_language(language, rating, data_translate_id)
 	.col-xl-3.col-lg-4.col-md-4.col-sm-4.col-4
 		.language
-			.lang= language
+			.lang(data-translate-id=data_translate_id)
 			.lang-progress= rating
 
 mixin add_skill(language, rating)
@@ -20,7 +20,7 @@ mixin add_skill(language, rating)
 					li.rating
 
 
-mixin add_interest(source, description)
+mixin add_interest(source, description, data_translate_id)
 	li.item
 		.item-container(class=attributes.custom_class)
 			.image-container
@@ -29,12 +29,12 @@ mixin add_interest(source, description)
 					img.image(src=source, alt=description)
 				else
 					img.image(src=source, alt=description, style="opacity: 0")
-			p.title(data-custom-text=attributes.custom_text)= description
+			p.title(data-custom-text=attributes.custom_text, data-translate-id=data_translate_id)
 
 
-mixin add_project(title, url, image)
+mixin add_project(title, url, image, data_translate_id)
 	.project-container
 		.image-container
 			a(href=url, target='_blank')
 				img.img-fluid(src=image)
-		p.title= title
+		p.title(data-translate-id=data_translate_id)

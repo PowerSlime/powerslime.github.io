@@ -1,26 +1,21 @@
 .container.padding-50-on-top
 	.row
 		.col-md-6.languages-block
-			h2 Languages
+			h2(data-translate-id="language-header")
 			section.container.languages-container.container-with-no-padding
 				.row
-					+add_language('English', '3/5')
-					+add_language('Romanian', '3/5')
-					+add_language('Russian', '5/5')
+					+add_language('English', '3/5', 'language-en')
+					+add_language('Romanian', '3/5', 'language-ro')
+					+add_language('Russian', '5/5', 'language-ru')
 
 				.row
 					.col
 						article
-							p.
-								Russian is my native language. English is “language of work”, also I like it so
-								much. Romanian for me is a bit harder than English, only because I don’t use
-								it so much...
-							p.
-								I want to know English as good as Russian. It will give me a possibility to speak
-								easier with other people.
+							p(data-translate-id="language-first-part")
+							p(data-translate-id="language-second-part")
 
 		.col-md-6.education-block.text-align-to-right
-			h2 Education
+			h2(data-translate-id="education-header")
 			section.container.education-container.container-with-no-padding
 				.row
 					.col

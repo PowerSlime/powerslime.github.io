@@ -2,7 +2,7 @@
 	.row
 		//- Skills
 		.col-md-6.skills-block
-			h2 Skills
+			h2(data-translate-id="skills-header")
 
 			section.container.skills-container.container-with-no-padding
 			.row
@@ -24,14 +24,14 @@
 
 		//- Interests
 		.col-md-6.interests-block.text-align-to-right
-			h2 Interests
+			h2(data-translate-id="interests-header")
 
 			section.container.interests-container.container-with-no-padding
 			.row
 				.col-md-12
 					.custom-flex
 						ul.interests-list
-							+add_interest('./img/magic.jpg', 'Click ^_^')(custom_class='magic', custom_text='Anime')
-							+add_interest('./img/photography.jpg', 'Photography')
-							+add_interest('./img/design.jpg', 'Design')
-							+add_interest('./img/programming.jpg', 'Programming')
+							+add_interest('./img/magic.jpg', 'Click ^_^', 'interests-anime')(custom_class='magic', custom_text='Anime')
+							+add_interest('./img/photography.jpg', 'Photography', 'interests-photography')
+							+add_interest('./img/design.jpg', 'Design', 'interests-design')
+							+add_interest('./img/programming.jpg', 'Programming', 'interests-programming')

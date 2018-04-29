@@ -1,11 +1,11 @@
 .container.padding-50-on-top
 	.row.justify-content-center
-		h2 Projects
+		h2(data-translate-id="projects-header")
 
 	.row.projects-row
 		.col-md-4
-			+add_project('Artist template', '//powerslime.github.io/template_mihaela_dreglea_art/', './img/artist_template.jpg')
+			+add_project('Artist template', '//powerslime.github.io/template_mihaela_dreglea_art/', './img/artist_template.jpg', 'project-artist')
 		.col-md-4
-			+add_project('Starter template', '//github.com/PowerSlime/starter_template', './img/starter_template.jpg')
+			+add_project('Starter template', '//github.com/PowerSlime/starter_template', './img/starter_template.jpg', 'project-starter-template')
 		.col-md-4
-			+add_project('This page', '//github.com/PowerSlime/powerslime.github.io', './img/powerslime.github.io.jpg')
+			+add_project('This page', '//github.com/PowerSlime/powerslime.github.io', './img/powerslime.github.io.jpg', 'project-this')
