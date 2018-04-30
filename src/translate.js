@@ -13,10 +13,8 @@ var translateText = function (language) {
 $(document).ready(function () {
 	translateText('en');
 
-	$('.translations').find('li').each(function (index, item) {
-		$(item).click(function () {
-			translateText($(this).text().toLowerCase());
-		});
+	$('.translations').on('click', 'li', function () {
+		translateText($(this).text().toLowerCase());
 	});
 });
 
