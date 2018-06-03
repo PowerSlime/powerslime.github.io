@@ -114,6 +114,11 @@ locals = {
 		ru: "Мои работы",
 		ro: "Lucrările mele"
 	},
+	"project-magicofgods": {
+		en: "Magic of Gods Landing",
+		ro: "Magic of Gods Landing",
+		ru: "Лендинг Magic of Gods"
+	},
 	"project-artist": {
 		en: "Artist template",
 		ru: "Шаблон для художника",
