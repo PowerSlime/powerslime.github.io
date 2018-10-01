@@ -114,6 +114,11 @@ locals = {
 		ru: "Мои работы",
 		ro: "Lucrările mele"
 	},
+	"project-deerio": {
+		en: "[React] DeerIO Enchanted",
+		ro: "[React] DeerIO Enchanted",
+		ru: "[React] DeerIO Enchanted",
+	},
 	"project-magicofgods": {
 		en: "Magic of Gods Landing",
 		ro: "Magic of Gods Landing",
