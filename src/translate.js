@@ -114,6 +114,11 @@ locals = {
 		ru: "Мои работы",
 		ro: "Lucrările mele"
 	},
+	"project-python-deerio": {
+		en: "[Python] DeerIO API",
+		ro: "[Python] DeerIO API",
+		ru: "[Python] DeerIO API"
+	},
 	"project-deerio": {
 		en: "[React] DeerIO Enchanted",
 		ro: "[React] DeerIO Enchanted",
