@@ -36,11 +36,31 @@ patterns = {
 gulp.task("browser-sync", () => {
     browserSync.init({
         server: {
-            baseDir: config["dist_dir"]
+            baseDir: config["dist_dir"],
+            // Enable directory listening
+            // Shows all files in directory that we serve
+            directory: true
         },
 
-        notify: false
+        // Watch files for changes
+        watch: true,
+
+        // Add HTTP access control (CORS) headers to assets served by Browsersync
+        cors: true,
+
+        // Disable opening url in browser
+        open: false,
+
+        // Disable browser-sync's notification on page
+        // As "Connected to BrowserSync", "Injected main.min.css", etc...
+        notify: false,
+
+        // Wait 0.5s before reloading the page
+        reloadDebounce: 500
     });
+
+    // BrowserSync's watcher
+    // browserSync.watch(paths.sync.watch).on('change', browserSync.reload);
 });
 
 
@@ -102,15 +122,15 @@ gulp.task("sync", () => {
 });
 
 
-gulp.task("watch", config.run_on_start.concat(["browser-sync"]), () => {
-    gulp.watch(patterns.dist, ["sync"]);
-    gulp.watch(patterns.sass, ["sass"]);
-    gulp.watch(patterns.jade, ["jade"]);
-    gulp.watch(patterns.jade_files, ["jade"], null);
-    gulp.watch(patterns.html, ["move_html_to_dist"]);
-    gulp.watch(patterns.js, ["move_js_to_dist"]);
-    gulp.watch(patterns.img, ["imagemin"]);
+gulp.task("watch", gulp.series(config.run_on_start, gulp.parallel("browser-sync")), () => {
+    gulp.watch(patterns.dist, gulp.series("sync"));
+    gulp.watch(patterns.sass, gulp.series("sass"));
+    gulp.watch(patterns.jade, gulp.series("jade"));
+    gulp.watch(patterns.jade_files, gulp.series("jade"), null);
+    gulp.watch(patterns.html, gulp.series("move_html_to_dist"));
+    gulp.watch(patterns.js, gulp.series("move_js_to_dist"));
+    gulp.watch(patterns.img, gulp.series("imagemin"));
 });
 
-gulp.task("default", ["watch"]);
-gulp.task("build", config.run_on_start);
+gulp.task("default", gulp.series("watch"));
+gulp.task("build", gulp.parallel(config.run_on_start));
