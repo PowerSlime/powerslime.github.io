@@ -8,7 +8,7 @@ var translateText = function (language) {
 			current_item.html(new_html);
 		}
 	});
-}
+};
 
 $(document).ready(function () {
 	translateText('en');
@@ -20,9 +20,9 @@ $(document).ready(function () {
 
 locals = {
 	"about-me-occupation": {
-		en: "Student",
-		ru: "Студент",
-		ro: "Student"
+		en: "Front-end developer",
+		ru: "Front-end разработчик",
+		ro: "Front-end developer"
 	},
 	"about-me-header": {
 		en: "About me",
@@ -30,9 +30,9 @@ locals = {
 		ro: "Despre mine"
 	},
 	"about-me-description": {
-		en: "I’m 18, live in Moldova, I want to become a fullstack web-developer. My favorite language is Python.",
-		ru: "Мне 18 лет, живу в Молдове, хочу стать Fullstack веб-разработчиком. Мой любимый язык - Python.",
-		ro: "Am 18 de ani, trăiesc in Moldova, vreau să devin Fullstack web-dezvoltător. Limbaj de programare meu preferat - Python."
+		en: "I’m 19, live in Moldova. My favorite language is JavaScript. I'm always interested in learning new technologies, discovering new tools that I can use in projects.",
+		ru: "Мне 19 лет, живу в Молдове. Мой любимый язык - JavaScript. Я всегда готов к изучению новых технологий, инструментов для использования их в проектах.",
+		ro: "Am 19 de ani, trăiesc in Moldov. Limbaj de programare meu preferat - Javascript. Imi place se descoper techonologii si instrumente noi de a folosi pe ei in proiecte."
 	},
 	"about-me-date": {
 		en: "Date of birth:",
@@ -149,4 +149,4 @@ locals = {
 		ru: 'Дизайн разработан <a href="https://github.com/PowerSlime" ,="" target="_blank">мной</a>. Вы можете посмотреть все исходники <a href="https://github.com/PowerSlime/powerslime.github.io" ,="" target="_blank">здесь</a>.',
 		ro: 'Design dezvoltat de <a href="https://github.com/PowerSlime" ,="" target="_blank">mine</a>. Voi puteți să vă uitați in surse pe <a href="https://github.com/PowerSlime/powerslime.github.io" ,="" target="_blank">acest</a> link.'
 	},
-}
+};
