@@ -17,9 +17,12 @@ const AppContainer = () => {
     const { t, i18n } = useTranslation();
     const { data, error } = useSWR("/data.json", axiosFetcher);
 
-    const handleLanguageChange = useCallback((lng) => {
-        i18n.changeLanguage(lng);
-    }, []);
+    const handleLanguageChange = useCallback(
+        (lng) => {
+            i18n.changeLanguage(lng);
+        },
+        [i18n],
+    );
 
     if (error) {
         return (
