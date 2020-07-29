@@ -1,0 +1,106 @@
+{
+  "bio": {
+    "avatar": "/avatar.jpg",
+    "name": "Denis",
+    "surname": "Covaliuc",
+    "position": "POSITION",
+    "country": "Moldova",
+    "about": "ABOUT_ME"
+  },
+  "socials": {
+    "github": "https://github.com/powerslime"
+  },
+  "languages": ["English", "Russian", "Romanian"],
+  "skills": [
+    {
+      "name": "JavaScript (ES6+)"
+    },
+    {
+      "name": "React.js (+Next.js)"
+    },
+    {
+      "name": "Vue.js (+Nuxt.js)"
+    },
+    {
+      "name": "HTML/CSS/Pug.js/SASS"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "Webpack/Gulp"
+    },
+    {
+      "name": "Stack Overflow",
+      "color": "orange"
+    }
+  ],
+  "employmentHistory": [
+    {
+      "id": 1,
+      "startedAt": "08/2019",
+      "endedAt": "07/2020"
+    },
+    {
+      "id": 2,
+      "startedAt": "11/2018",
+      "endedAt": "08/2019"
+    },
+    {
+      "id": 3,
+      "startedAt": "12/2017",
+      "endedAt": "11/2018"
+    }
+  ],
+  "education": [
+    {
+      "name": "Colegiul Politehnic",
+      "startedAt": "2015",
+      "endedAt": "2019",
+      "location": "Balti, Moldova"
+    },
+    {
+      "name": "Liceum A. S. Puskin",
+      "startedAt": "2006",
+      "endedAt": "2015",
+      "location": "Falesti, Moldova"
+    }
+  ],
+  "projects": [
+    {
+      "name": "SyncWatch",
+      "description": "PROJECT.DESCRIPTION.SYNCWATCH",
+      "technologies": ["Vue.js", "Nuxt.js", "Vuetify", "WebSockets (Socket.io)"],
+      "link": "https://sw.server.powerslime.ru/",
+      "github": "https://github.com/PowerSlime/sync-watch",
+      "image": "/project-images/sw-frontend.png"
+    },
+    {
+      "name": "SyncWatch Backend",
+      "technologies": ["NodeJS", "Express.js", "WebSockets (Socket.io)"],
+      "github": "https://github.com/PowerSlime/sync-watch-server",
+      "image": "/project-images/sw-backend.png"
+    },
+    {
+      "name": "Deer.io Enchanted",
+      "description": "PROJECT.DESCRIPTION.DEERIO_ENCHANTED",
+      "technologies": ["React.js", "Next.js", "Bootstrap"],
+      "link": "https://powerslime.github.io/deer/",
+      "github": "https://github.com/PowerSlime/deer",
+      "image": "/project-images/DeerIO.jpg"
+    },
+    {
+      "name": "Deer.io API",
+      "technologies": ["Python", "Flask"],
+      "github": "https://github.com/PowerSlime/python-deer-io-api",
+      "image": "/project-images/PyDeerIO.jpg"
+    },
+    {
+      "name": "Magic of Gods landing",
+      "technologies": ["Gulp.js", "Pug.js", "SASS", "PostCSS", "Webpack", "JQuery"],
+      "link": "https://play.magicofgods.ru/",
+      "github": "https://github.com/PowerSlime/template_mog_landing",
+      "image": "/project-images/mog.png"
+    }
+  ]
+}
