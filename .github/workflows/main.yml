@@ -17,7 +17,7 @@ jobs:
         run: |
           npm run export
         env:
-          BASE_PATH: /
+          BASE_PATH:
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.5.7
