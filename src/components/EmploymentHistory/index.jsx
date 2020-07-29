@@ -1,4 +1,4 @@
-import { Timeline } from "antd";
+import { Timeline, Typography } from "antd";
 import PropTypes from "prop-types";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -11,7 +11,7 @@ const EmploymentHistory = ({ value }) => {
             <Timeline>
                 {value.map((work, index) => (
                     <Timeline.Item key={index}>
-                        <div>{t(`JOB.TITLE.${work.id}`)}</div>
+                        <Typography.Title level={4}>{t(`JOB.TITLE.${work.id}`)}</Typography.Title>
                         <div>
                             {work.startedAt} {"endedAt" in work ? `- ${work.endedAt}` : ""}
                         </div>

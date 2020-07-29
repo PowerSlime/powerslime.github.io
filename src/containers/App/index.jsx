@@ -44,7 +44,7 @@ const AppContainer = () => {
     }
 
     const headerBackgroundStyles = {
-        backgroundImage: `url(${process.env.BASE_PATH}/background.jpeg)`,
+        backgroundImage: `url(${process.env.BASE_PATH}/background.jpg)`,
     };
 
     return (
