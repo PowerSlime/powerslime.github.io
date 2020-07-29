@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Pull request checks
+on: [pull_request]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
+          
+      - name: Install dependencies
+        run: |
+          npm install
+          
+      - name: Linting
+        run: |
+          npm run lint:check
