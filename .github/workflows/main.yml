@@ -26,3 +26,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_TOKEN }}
           BRANCH: master # The branch the action should deploy to.
           FOLDER: dist # The folder the action should deploy.
+          CLEAN: true # Cleanup branch on every deploy
