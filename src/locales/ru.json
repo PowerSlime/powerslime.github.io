@@ -1,0 +1,26 @@
+{
+  "POSITION": "Front-end разработчик",
+  "ABOUT_ME": "Я - Front-end разработчик с более чем 2 годами коммерческого опыта работы. Любимый язык - JavaScript. Всегда заинтересован в изучении новых технологий и в решении задач любой сложности.",
+  "JOB": {
+    "TITLE": {
+      "1": "Front-end разработчик в Teramind",
+      "2": "Front-end разработчик в Rusodot",
+      "3": "Full-stack разработчик в Magic Of Gods"
+    }
+  },
+  "PROJECT": {
+    "DESCRIPTION": {
+      "NO_DESCRIPTION": "Без описания",
+      "SYNCWATCH": "Веб-приложение для синхронного просмотра фильмов с друзьями",
+      "DEERIO_ENCHANTED": "Веб-прилоежине для поиска аккаунтов на deer.io, с фильтрами"
+    }
+  },
+  "Colegiul Politehnic": "Политехнический колледж",
+  "Liceum A. S. Puskin": "Лицей им. А. С. Пушкина",
+  "Skills": "Навыки",
+  "Languages": "Языки",
+  "Employment history": "Опыт работы",
+  "Education": "Образование",
+  "Projects": "Проекты"
+}
+

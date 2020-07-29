@@ -1,0 +1,25 @@
+{
+  "POSITION": "Front-end developer",
+  "ABOUT_ME": "I'm a front-end developer with more than 2 years of commercial experience. Favorite language is JavaScript. Always interested in learning new technologies and solving any kind of problems.",
+  "JOB": {
+    "TITLE": {
+      "1": "Front-end developer at Teramind",
+      "2": "Front-end developer at Rusodot",
+      "3": "Full-stack developer at Magic Of Gods"
+    }
+  },
+  "PROJECT": {
+    "DESCRIPTION": {
+      "NO_DESCRIPTION": "No description was provided",
+      "SYNCWATCH": "A web-app to watch movies synchronously with your friends",
+      "DEERIO_ENCHANTED": "A web-app to search accounts on deer.io, with filters"
+    }
+  },
+  "Colegiul Politehnic": "Colegiul Politehnic",
+  "Liceum A. S. Puskin": "Liceum A. S. Puskin",
+  "Skills": "Skills",
+  "Languages": "Languages",
+  "Employment history": "Employment history",
+  "Education": "Education",
+  "Projects": "Projects"
+}
