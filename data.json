@@ -100,7 +100,7 @@
       "technologies": ["Gulp.js", "Pug.js", "SASS", "PostCSS", "Webpack", "JQuery"],
       "link": "https://play.magicofgods.ru/",
       "github": "https://github.com/PowerSlime/template_mog_landing",
-      "image": "/project-images/mog.png"
+      "image": "/project-images/mog.jpg"
     }
   ]
 }
