@@ -1,5 +1,5 @@
 import { GithubOutlined } from "@ant-design/icons";
-import { Col, Divider, Layout, Row, Select, Typography } from "antd";
+import { Button, Col, Divider, Layout, Row, Select, Typography } from "antd";
 import React, { useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import useSWR from "swr";
@@ -90,6 +90,9 @@ const AppContainer = () => {
                                 <div>{t(data.bio.position)}</div>
                                 <Divider style={{ borderTopColor: "rgba(255, 255, 255, .85)" }} />
                                 <p>{t(data.bio.about)}</p>
+                                <Button ghost href={`mailto:${data.contacts.email}`}>
+                                    {t("Contact me")}
+                                </Button>
                             </div>
                         </Col>
                     </Row>
